@@ -5,10 +5,28 @@ It is based on [Mortal/evince-synctex](https://github.com/Mortal/evince-synctex)
 
 ## Installation
 
-A [Python 3](https://www.python.org/downloads) installation is required. To install the latest version, run the following command:
+A [Python 3](https://www.python.org/downloads) installation is required.
+
+## pipx installation
+
+You can install this tool in an isolated environment using [pipx](https://pypa.github.io/pipx/):
 
 ```shell
-pip3 install --user https://github.com/efoerster/evince-synctex/archive/master.zip
+pipx install .
+```
+
+Run this command from the root of the repository after cloning it.
+
+## System dependencies
+
+This tool requires the following system packages to be installed:
+
+- `dbus-python`
+
+On Debian/Ubuntu, you can install them with:
+
+```shell
+sudo apt install python3-dbus
 ```
 
 ## Usage

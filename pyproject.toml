@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evince-synctex"
+version = "0.1.0"
+description = "Provides a command-line-friendly SyncTeX integration for Evince"
+readme = "README.md"
+requires-python = ">=3.4"
+license = { text = "GPLv3" }
+authors = [
+    { name = "efoerster" },
+    { name = "unknowndk" }
+]
+dependencies = [
+    "dbus-python"
+]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6"
+]
+
+[project.scripts]
+evince-synctex = "evince_synctex:main"
