@@ -7,12 +7,12 @@ It is based on [Mortal/evince-synctex](https://github.com/Mortal/evince-synctex)
 
 A [Python 3](https://www.python.org/downloads) installation is required.
 
-## pipx installation
+## uv installation
 
-You can install this tool in an isolated environment using [pipx](https://pypa.github.io/pipx/):
+You can install this tool in an isolated environment using [uv](https://docs.astral.sh/uv/getting-started/installation/):
 
 ```shell
-pipx install .
+uv tool install .
 ```
 
 Run this command from the root of the repository after cloning it.
@@ -22,11 +22,13 @@ Run this command from the root of the repository after cloning it.
 This tool requires the following system packages to be installed:
 
 - `dbus-python`
+- `libdbus-1-dev`
+- `pkg-config`
 
 On Debian/Ubuntu, you can install them with:
 
 ```shell
-sudo apt install python3-dbus
+sudo apt install python3-dbus libdbus-1-dev pkg-config
 ```
 
 ## Usage
